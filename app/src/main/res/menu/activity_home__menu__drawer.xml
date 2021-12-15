@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+
+            android:id="@+id/navigation_waiting"
+            android:icon="@drawable/waiting_icon"
+            android:title="New Orders" />
+
+        <item
+            android:id="@+id/navigation_order"
+            android:icon="@drawable/order_icon"
+            android:title="Pending Orders" />
+
+        <item
+            android:id="@+id/navigation_completed"
+            android:icon="@drawable/order_icon"
+            android:title="Completed Orders" />
+        <item
+            android:id="@+id/navigation_cancelled"
+            android:icon="@drawable/order_icon"
+            android:title="Cancelled Orders" />
+
+
+        <item
+
+            android:id="@+id/navigation_riderstatus"
+            android:icon="@drawable/setting_icon"
+            android:title="Rider Status" />
+        <item
+
+            android:id="@+id/navigation_profile"
+            android:icon="@drawable/ic_profile"
+            android:title="My Profile" />
+
+
+        <item
+            android:id="@+id/nav_share_app"
+            android:icon="@drawable/ic_share"
+            android:title="Share App" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_about"
+            android:title="About" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Logout" />
+
+
+    </group>
+</menu>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundlogo"
+
+    >
+    <include
+        android:visibility="gone"
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_layout"/>
+
+    <LinearLayout
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/nav_view"
+        android:layout_margin="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:fontFamily="@font/amiri_regular"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_date"
+            android:padding="7dp"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:focusableInTouchMode="false"
+            android:hint="dd/mm/yyyy"
+            android:singleLine="true"
+            android:drawableRight="@android:drawable/ic_menu_my_calendar"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recy_completed_order"/>
+
+
+    </LinearLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:visibility="gone"
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:itemIconTint="@color/text_color"
+        app:itemTextColor="@color/text_color"
+        android:background="?android:attr/windowBackground"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_nav_menu" />
+    <TextView
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_no_orders"
+        android:text=""
+        android:textSize="20sp"
+        android:textColor="@color/text_color"
+        android:fontFamily="@font/amiri_regular"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+</RelativeLayout>

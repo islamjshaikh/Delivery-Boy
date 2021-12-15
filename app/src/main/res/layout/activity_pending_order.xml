@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+    <include layout="@layout/activity_toolbar_layout"/>
+    <LinearLayout
+        android:layout_margin="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:fontFamily="@font/amiri_regular"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_date"
+            android:padding="7dp"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:focusableInTouchMode="false"
+            android:hint="dd/mm/yyyy"
+            android:singleLine="true"
+            android:drawableRight="@android:drawable/ic_menu_my_calendar"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recy_completed_order"/>
+
+    </LinearLayout>
+</LinearLayout>

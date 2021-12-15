@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Activity.ProfileActivity">
+<!--
+    <include layout="@layout/activity_toolbar_layout"/>
+-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scr">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_marginTop="7dp"
+        android:background="@color/white"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_edit"
+            android:src="@drawable/edit"
+            android:layout_gravity="right"/>
+
+        <TextView
+            android:fontFamily="@font/amiri_regular"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@color/lightgrey_text"/>
+        <EditText
+            android:fontFamily="@font/amiri_regular"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            android:textColor="@color/text_color"
+            android:id="@+id/edit_name"/>
+
+        <TextView
+            android:fontFamily="@font/amiri_regular"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="@color/lightgrey_text"/>
+
+        <EditText
+            android:fontFamily="@font/amiri_regular"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/text_color"
+            android:id="@+id/edit_email"/>
+        <TextView
+            android:fontFamily="@font/amiri_regular"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textColor="@color/lightgrey_text"/>
+        <EditText
+            android:fontFamily="@font/amiri_regular"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            android:textColor="@color/text_color"
+            android:id="@+id/edit_address"/>
+        <TextView
+            android:fontFamily="@font/amiri_regular"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile Number"
+            android:textColor="@color/lightgrey_text"/>
+        <EditText
+            android:fontFamily="@font/amiri_regular"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:enabled="false"
+            android:maxLength="10"
+            android:textColor="@color/text_color"
+            android:id="@+id/edit_phone"/>
+        <TextView
+            android:fontFamily="@font/amiri_regular"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Time"
+            android:textColor="@color/lightgrey_text"/>
+        <EditText
+            android:fontFamily="@font/amiri_regular"
+
+            android:drawableRight="@drawable/timer_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:inputType="textCapWords"
+            android:textColor="@color/text_color"
+            android:id="@+id/edit_starttime"/>
+
+        <TextView
+            android:fontFamily="@font/amiri_regular"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End Time"
+            android:textColor="@color/lightgrey_text"/>
+        <EditText
+            android:fontFamily="@font/amiri_regular"
+
+            android:drawablePadding="5dp"
+           android:drawableRight="@drawable/timer_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            android:textColor="@color/text_color"
+            android:id="@+id/edit_endtime"/>
+    </LinearLayout>
+
+
+
+    <Button
+        android:fontFamily="@font/amiri_bold"
+
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:id="@+id/btn_update"
+        android:text="Update Profile"
+        android:textColor="@color/white"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

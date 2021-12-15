@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundlogo"
+
+    >
+
+    <include
+        android:id="@+id/toolbarlayout"
+        layout="@layout/activity_toolbar_layout"/>
+    <ScrollView
+        android:layout_below="@+id/toolbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scr">
+
+
+        <LinearLayout
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/amiri_bold"
+                android:textColor="@color/text_color"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Order Detail"
+                android:textAllCaps="true"/>
+
+            <LinearLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="7dp">
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Order Number"
+                        android:fontFamily="@font/amiri_regular"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/lightgrey_text"
+                       />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="Order #111"
+                        android:fontFamily="@font/amiri_regular"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/text_color"
+                        android:id="@+id/txt_order_no"/>
+
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Reference Number"
+                        android:fontFamily="@font/amiri_regular"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/lightgrey_text"
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="ref #111"
+                        android:fontFamily="@font/amiri_regular"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/text_color"
+                        android:id="@+id/txt_ref_no"/>
+
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Payment Type"
+                        android:fontFamily="@font/amiri_regular"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/lightgrey_text"
+                        />
+
+                    <TextView
+                        android:fontFamily="@font/amiri_regular"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="payment type"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/text_color"
+                        android:id="@+id/txt_payment_mode"/>
+
+                    <TextView
+                        android:id="@+id/txt_labelamount"
+
+                        android:layout_marginTop="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Payment Amount"
+                        android:fontFamily="@font/amiri_regular"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/lightgrey_text"
+                        />
+
+
+                    <TextView
+                        android:fontFamily="@font/amiri_regular"
+                        android:id="@+id/txt_amt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="Payment amt"
+                        android:textColor="@color/text_color"/>
+
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Timeslot"
+                        android:fontFamily="@font/amiri_regular"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/lightgrey_text"
+                        />
+
+
+                    <TextView
+                        android:fontFamily="@font/amiri_regular"
+                         android:id="@+id/txt_estimated_time"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="estimated time"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/text_color" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <TextView
+                android:visibility="gone"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/amiri_regular"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Instructions"/>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/amiri_regular"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_color"
+                        android:text="quickest audacious Feb in"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/amiri_bold"
+                android:text="Restaurant Detail"
+                android:textAllCaps="true"
+                android:textColor="@color/text_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/amiri_regular"
+                        android:id="@+id/txt_hotel_name"
+                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_color"
+                        tools:text="Big Fun"/>
+
+
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/amiri_regular"
+                        android:id="@+id/txt_hotel_address"
+                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="65-D1 AL-Hafeez Heights Gulberg 3,5400, Lahoore"
+                        android:textColor="@color/text_color"/>
+
+                    <TextView
+                        android:drawablePadding="7dp"
+                        android:id="@+id/txt_phn"
+                        android:autoLink="phone"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/amiri_regular"
+                        android:padding="5dp"
+                        android:drawableLeft="@drawable/ic_call"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_color"
+                        tools:text="+923004150660"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color"
+
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/amiri_bold"
+                android:text="Delivery Detail"
+                android:textAllCaps="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="5dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="Foodomia Pakistan"
+                        android:id="@+id/receipt_name"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/amiri_regular"
+
+                        android:textColor="@color/text_color"/>
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/amiri_regular"
+                        android:id="@+id/receipt_number"
+                        android:drawablePadding="7dp"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="+92313070052"
+                        android:autoLink="phone"
+                        android:drawableLeft="@drawable/ic_call"
+                        android:textColor="@color/text_color"/>
+
+                    <TextView
+                        android:id="@+id/txt_dest_address"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/amiri_regular"
+
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="H . NO. 59-A, Block B, NAZ Town,Lahore"
+                        android:textColor="@color/text_color"/>
+
+
+                    <Button
+                        android:fontFamily="@font/amiri_bold"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btn_way_to_hotel"
+                        android:background="@color/green"
+                        android:textColor="@color/white"
+                        android:text="Order Completed"
+                        android:layout_marginTop="12dp"
+                        android:layout_gravity="bottom"
+                        android:textAllCaps="true"/>
+
+                    <Button
+                        android:visibility="gone"
+                        android:layout_marginTop="7dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btn_showway"
+                        android:text="Show Way"
+                        android:background="@color/colorPrimary"
+                        android:textColor="@color/white"/>
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/nav_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="bottom"
+                android:visibility="gone"
+
+                android:background="?android:attr/windowBackground"
+                android:layout_alignParentBottom="true"
+                app:menu="@menu/bottom_nav_menu" />
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1070473010572",
+    "firebase_url": "https://deliverystar-5cefd.firebaseio.com",
+    "project_id": "deliverystar-5cefd",
+    "storage_bucket": "deliverystar-5cefd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1070473010572:android:011afd0b89f2b08be40aa9",
+        "android_client_info": {
+          "package_name": "com.precloud.deliverystar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1070473010572-5bbb6ljk2qnm35jcscjrp6oi9ssv8md2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.precloud.deliverystar",
+            "certificate_hash": "a552d113605807bf9a7020b6a366d23213633671"
+          }
+        },
+        {
+          "client_id": "1070473010572-b904uvk5hc5emtfuaphq212r5aefa30m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAEByYQkmR0MDqoiuB5lFjqzrh-ggfyGU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1070473010572-b904uvk5hc5emtfuaphq212r5aefa30m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
